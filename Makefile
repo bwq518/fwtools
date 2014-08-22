@@ -8,7 +8,7 @@
 EXE= 	addpattern trx motorola-bin dgfirmware trx2usr ptgen airlink srec2bin \
 	mkmylofw mkcsysimg mkzynfw mkcasfw add_header makeamitbin encode_crc nand_ecc pc1crypt \
 	osbridge-crc mkdniimg mktitanimg mkchkimg spw303v zyxbcm trx2edips xorimage mkedimaximg mkbrncmdline \
-	mkbrnimg mkdapimg mkcameofw mkporayfw mkdcs932 dgn3500sum
+	mkbrnimg mkdapimg mkcameofw mkporayfw mkdcs932 dgn3500sum asustrx
 
 
 OBJS= 	addpattern.o trx.o motorola-bin.o dgfirmware.o mksenaofw.o md5.o trx2usr.o ptgen.o airlink.o srec2bin.o \
@@ -17,7 +17,7 @@ OBJS= 	addpattern.o trx.o motorola-bin.o dgfirmware.o mksenaofw.o md5.o trx2usr.
 	osbridge-crc.o wrt400n.o cyg_crc32.o mkdniimg.o mktitanimg.o mkchkimg.o mkzcfw.o spw303v.o zyxbcm.o trx2edips.o \
 	xorimage.o buffalo-enc.o buffalo-lib.o buffalo-tag.o buffalo-tftp.o mkwrgimg.o mkedimaximg.o mkbrncmdline.o \
 	mkbrnimg.o mkdapimg.o mkcameofw.o seama.o fix-u-media-header.o hcsmakeimage.o bcmalgo.o mkporayfw.o mkhilinkfw.o \
-	mkdcs932.o mkheader_gemtek.o mkrtn56uimg.o dgn3500sum.o
+	mkdcs932.o mkheader_gemtek.o mkrtn56uimg.o dgn3500sum.o asustrx.o
 
 EXE_E=	hcsmakeimage \
 	mksenaofw \
