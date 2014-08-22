@@ -42,7 +42,7 @@ EXE_E=	hcsmakeimage \
 
 all: 	$(OBJS) $(EXE) $(EXE_E)
 
-mkrtn56uimg: mkrtn56uimg.o cyg_crc32.o
+bin/mkrtn56uimg: mkrtn56uimg.o cyg_crc32.o
 	cc -static -lz -lcrypto mkrtn56uimg.o cyg_crc32.o -o mkrtn56uimg
 
 mkheader_gemtek: mkheader_gemtek.o cyg_crc32.o
@@ -109,5 +109,5 @@ $(OBJS): %.o: %.c
 	cc -w -c $< -o $@
 	
 clean:
-	rm -f *.o $(EXE) $(EXE_E) $(OBJS)
+	rm -rf *.o $(EXE) $(EXE_E) $(OBJS)
 
